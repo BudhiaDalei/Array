@@ -1,0 +1,18 @@
+import java.util.Arrays;
+class ReverseArray{
+	public static void main(String [] args){
+		//Create an orginal array
+		int[] originalArray = {1,2,3,4,5};
+		//Create a new array with same array length
+		int[] reversedArray = new int[originalArray.length];
+
+		//Copy element from original array to  reverse array 
+		for(int i = 0; i< originalArray.length; i++){
+			reversedArray[i] = originalArray[originalArray.length - 1 - i];
+		}
+
+		//Print hte reversed array 
+		System.out.println("Orginnal Array: "+ Arrays.toString(originalArray));
+		System.out.println("Reversed Array:"+ Arrays.toString(reversedArray));
+	}
+}
