@@ -1,1 +1,23 @@
+class MaxMinArrayExample{
+	public static void main(String[] args){
+		//create a sample array
+		int[] numbers = {5,12,8,9,3,16,34};
+		//initialize to store the max and min value
+		int max = numbers[0];//Assume the first element is the maximum  
+		int min = numbers[0];//Assume the first element is the minimum
 
+		//Iterate through the array
+		for(int i = 1; i < numbers.length; i++){
+			if(numbers[i] > max){
+				max = numbers[i];//Update maximum if a larger element is found
+			}
+			if(numbers[i] < min){
+				min = numbers[i];//Update minimum if a smaller element is found
+			}
+		}
+
+		//print the max and min value
+		System.out.println("Maximum value is "+ max);
+		System.out.println("minimum value is "+ min);
+	}
+}
